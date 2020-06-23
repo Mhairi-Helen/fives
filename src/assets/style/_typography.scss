@@ -1,0 +1,75 @@
+/* Headings */
+
+h1 {
+    font-family: chantal  , sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--white);
+}
+
+h2{
+    font-family: futura-pt , sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--dark-grey);
+    padding: 4rem 5rem;
+    text-align: center;
+}
+
+h3{
+    font-family: futura-pt , sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--dark-grey);
+}
+
+h4{
+    font-family: futura-pt , sans-serif;
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: var(--dark-grey);
+}
+
+h5{
+    font-family: futura-pt , sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--dark-grey);
+}
+
+h6{
+    font-family: futura-pt , sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--dark-grey);
+}
+
+/* General */
+
+p{
+    font-family: futura-pt , sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+
+
+}
+time{
+    font-family: futura-pt , sans-serif;
+    font-weight: 400;
+    color: var(--dark-grey);
+}
+
+ul{
+    font-family: futura-pt , sans-serif;
+    font-size: 1rem;
+    color: var(--dark-grey);
+    margin-left: 1rem;
+}
+
+
+
+/* Remove default links styling */
+a {
+    text-decoration: none;
+    color: inherit;
+}

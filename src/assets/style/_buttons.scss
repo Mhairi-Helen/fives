@@ -1,0 +1,29 @@
+.button--primary {
+    
+    background-color: var(--turquoise);
+    color: var(--white);
+    text-decoration: none;
+    border: none;
+    font-size: 1rem;
+    padding: 1rem ;
+    border-radius: 10px ;
+}
+
+.button--secondary {
+    background-color: var(--orange);
+}
+
+.card__button {
+    width: 11rem;
+    display: inline-block;
+    align-self: center;
+    margin: 1rem;
+}
+
+.button:hover {
+    background-color: var(--light-turquoise);
+}
+
+.button:active {
+    background-color: var(--turquoise);
+}
