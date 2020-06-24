@@ -70,6 +70,7 @@ body{
 .wrapper{
     height: 100vh;
     width: 100vw;
+    max-width: 1200px;
     margin: 0 auto;
     background-color: var(--white);
     overflow-x: hidden;

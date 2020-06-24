@@ -21,6 +21,13 @@ button{
     padding: 1rem 2rem; 
 }
 
+.button--icon{
+    display: inline-block;
+    max-width: 4rem; max-height: 4rem;
+    min-width: 2rem; min-height: 2rem;
+
+}
+
 button:hover {
     opacity: 0.5;
 }
@@ -28,3 +35,4 @@ button:hover {
 button:active {
     opacity: 1;
 }
+

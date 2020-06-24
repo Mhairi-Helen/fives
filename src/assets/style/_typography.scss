@@ -2,8 +2,8 @@
 
 h1 {
     font-family: chantal  , sans-serif;
-    font-size: 3rem;
-    font-weight: 400;
+    font-size: 6rem;
+    font-weight: 700;
     color: var(--white);
 }
 
@@ -61,9 +61,16 @@ time{
 
 ul{
     font-family: futura-pt , sans-serif;
+    list-style: none;
     font-size: 1rem;
     color: var(--dark-grey);
     margin-left: 1rem;
+}
+
+li{
+    display: block;
+    position: relative;
+    transition-duration: 0.5s;
 }
 
 
