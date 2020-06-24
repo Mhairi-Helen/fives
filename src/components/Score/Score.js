@@ -1,19 +1,28 @@
 import React from "react";
 
 
-const Score = ({ }) => {
+const Score = ({ teamName, score, winner, handleClickPlus, handleClickMinus }) => {
 
     return (
 
-        <div >
+        <div>
+            <h5>{teamName}</h5>
+            <div >
+                <p
+                    className="score"
+                >{score}</p>
+            </div>
             <div>
-                <h5>{ScoreName}</h5>
-                <div >
-                    <p>{score}</p>
-                </div>
-                <div>
-                    <button disabled={winner} onClick={handleClick}>+</button>
-                </div>
+                <button
+                    className="button--primary"
+                    disabled={winner}
+                    onClick={handleClickMinus}
+                >-</button>
+                <button
+                    className="button--primary"
+                    disabled={winner}
+                    onClick={handleClickPlus}
+                >+</button>
             </div>
         </div>
     )

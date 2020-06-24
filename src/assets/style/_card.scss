@@ -1,0 +1,41 @@
+.cardlist{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card{
+   
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-gap: 1rem;
+    max-width: calc(100% - 0.5rem);
+    text-align: center;
+    line-height: 1.5rem;
+    
+}
+
+.card__header{
+    text-align: left;
+    margin: 2em;
+    grid-column: span 2;
+}
+
+.card__score{
+    grid-row: span 1;
+    grid-column: span 1;
+    margin: 2rem
+}
+
+.card__button{
+    width: 11rem;
+    display: inline-block;
+    align-self: center;
+    margin: 1rem;
+}
+
+.card__button--reset{
+    grid-column: span 2;
+
+}

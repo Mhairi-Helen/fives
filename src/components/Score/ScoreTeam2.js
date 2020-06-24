@@ -1,21 +1,21 @@
 import { connect } from "react-redux";
-import Player from "./Player";
-import { player2 } from "../../data/actions";
+import Score from "./Score";
+import { score2Add, score2Minus } from "../../data/actions";
 
 const mapStateToProps = (state) => {
 
     return {
-        playerName: state.player2Name,
-        score: state.player2,
+        teamName: state.team2Name,
+        score: state.scoreTeam2,
         winner: state.winner,
-        server: !state.player1Serve,
     }
 };
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        handleClick: () => dispatch(player2()),
+        handleClickPlus: () => dispatch(score2Add()),
+        handleClickMinus: () => dispatch(score2Minus())
     }
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Player);
+export default connect(mapStateToProps, mapDispatchToProps)(Score);

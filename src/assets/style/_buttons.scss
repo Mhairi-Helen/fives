@@ -1,29 +1,30 @@
+button{
+    text-decoration: none;
+    border: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem ;
+    margin: 0.5rem;
+    border-radius: 10px ;
+
+}
 .button--primary {
     
     background-color: var(--turquoise);
     color: var(--white);
-    text-decoration: none;
-    border: none;
-    font-size: 1rem;
-    padding: 1rem ;
-    border-radius: 10px ;
+    font-size: 1.5rem;
+    
 }
 
 .button--secondary {
     background-color: var(--orange);
+    color: var(--white);
+    padding: 1rem 2rem; 
 }
 
-.card__button {
-    width: 11rem;
-    display: inline-block;
-    align-self: center;
-    margin: 1rem;
+button:hover {
+    opacity: 0.5;
 }
 
-.button:hover {
-    background-color: var(--light-turquoise);
-}
-
-.button:active {
-    background-color: var(--turquoise);
+button:active {
+    opacity: 1;
 }
