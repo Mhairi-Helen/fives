@@ -1,0 +1,34 @@
+ 
+ /*radio button container */
+ .radio__container{
+    display: inline-block;
+    max-width: 6em;
+    max-height: 4rem;
+ }
+
+
+/* hide browser default buttons */
+.radio__button{
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0; 
+}
+
+/* use chosen icons as radio buttons */
+.radio__img{
+    display: inline-block;
+    width: 100%; height: 100%;
+    object-fit: contain; 
+}
+
+/* hover styling */
+.radio__button--img:hover {
+    opacity:0.6;
+    cursor: pointer;
+  }
+  
+  /* checked styling*/
+  .radio__button:checked ~ .radio__button--img {
+    opacity:0.6;
+  }
