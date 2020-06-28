@@ -40,8 +40,9 @@ class Players extends Component {
                 <button
                     className={"button--primary" + (teamsGenerated || (players.length < 3) ? " disabled" : "")}
                     onClick={handleGenerate}
-                    disabled={teamsGenerated || (players.length < 3)}
-                >Generate Teams</button>
+                    disabled={teamsGenerated || (players.length < 3)}>
+                    <a href="/step2">Generate Teams</a>
+                </button>
 
                 <Reset />
             </Fragment >

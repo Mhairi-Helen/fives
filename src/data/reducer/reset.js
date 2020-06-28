@@ -1,4 +1,4 @@
-//Reset player list, teams and scores
+//Reset all for a new game with new teams
 const reset = (state, action) => {
     return {
         players: [],

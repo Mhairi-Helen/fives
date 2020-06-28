@@ -46,6 +46,22 @@ export const generateTeams = () => {
     }
 };
 
+export const addTeamNames = (data) => {
+    return {
+        type: "ADD_TEAM_NAME",
+        data: data,
+    }
+
+}
+
+
+//action to reset team names only
+export const resetTeamNames = () => {
+    return {
+        type: "RESET_TEAM_NAMES",
+    }
+};
+
 //action to score only
 export const resetScore = () => {
     return {

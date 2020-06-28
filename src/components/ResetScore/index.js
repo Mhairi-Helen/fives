@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import Reset from "./Reset";
+import ResetScore from "./ResetScore";
 import { resetScore } from "../../data/action";
 
 const mapDispatchToProps = (dispatch) => {
@@ -9,4 +9,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 };
 
-export default connect(null, mapDispatchToProps)(Reset);
+export default connect(null, mapDispatchToProps)(ResetScore);

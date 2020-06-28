@@ -16,15 +16,15 @@ const Nav = () => {
             <ul className="dropdown__content">
                 <li><a
                     className="dropdown__item"
-                    href="/">
+                    href="/step1">
                     Step 1: Enter Player Names</a></li>
                 <li><a
                     className="dropdown__item"
-                    href="/">
+                    href="/step2">
                     Step 2: Enter Player Names</a></li>
                 <li><a
                     className="dropdown__item"
-                    href="/">
+                    href="/step3">
                     Step 3: Kick Off!</a></li>
             </ul>
         </nav>

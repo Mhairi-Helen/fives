@@ -4,7 +4,7 @@ import TeamList from "./TeamList";
 const mapStateToProps = (state) => {
 
     return {
-        teamName: state.team2Name,
+        teamName: "Team 2",
         team: state.team2,
         teamsGenerated: state.teamsGenerated,
     }

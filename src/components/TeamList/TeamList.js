@@ -7,13 +7,13 @@ class TeamList extends Component {
 
     render() {
 
-        const { teamName, team } = this.props;
+        const { teamName, team, teamsGenerated } = this.props;
 
         return (
             <Fragment>
                 <ul>
                     <h4>{teamName}</h4>
-                    {team.length < 1 ? <p>Please add more players</p> : (
+                    {
                         team.map((player, index) => (
                             <li key={index} id={index}>
                                 <section>
@@ -30,7 +30,7 @@ class TeamList extends Component {
                         </picture> */}
                             </li>
                         ))
-                    )}
+                    }
                 </ul>
             </Fragment >
         )

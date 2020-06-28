@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-
-
 class Player extends Component {
 
     constructor(props) {
@@ -34,7 +32,7 @@ class Player extends Component {
     handleSubmitPlayer = (e) => {
         e.preventDefault();
 
-        const { playerName, experience, error } = this.state;
+        const { playerName, error } = this.state;
 
         if (playerName.length < 1) {
             this.setState({ error: "Please provide a name" })
@@ -47,12 +45,8 @@ class Player extends Component {
                 error: '',
             })
         };
-
-
-
     }
 
-    // {playerNameErr ? <small>{playerNameErr}</small> : null}
 
     render() {
 
