@@ -9,7 +9,7 @@ const Nav = () => {
         >
             <picture className="button--icon dropdown__btn">
                 <img
-                    className="icon "
+                    className="icon"
                     src={require('../../assets/icons/hamburgerWhite.png')} alt="Menu icon" />
             </picture>
 

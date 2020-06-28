@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 
 
 class TeamList extends Component {
@@ -10,17 +10,17 @@ class TeamList extends Component {
         const { teamName, team, teamsGenerated, colours1 } = this.props;
 
         return (
-            <Fragment>
-                <ul>
-                    <h4>{teamName}</h4>
+            <div div className="card">
+                <ul className="card__list">
+                    <h5>{teamName}</h5>
 
                     {colours1 ?
-                        <picture className="head--logo">
+                        <picture className="card__img">
                             <img
                                 className="icon"
                                 src={require('../../assets/icons/strip1.png')} alt="Football strip icon" />
                         </picture> :
-                        <picture className="head--logo">
+                        <picture className="card__img">
                             <img
                                 className="icon"
                                 src={require('../../assets/icons/strip2.png')} alt="Football strip icon" />
@@ -28,7 +28,7 @@ class TeamList extends Component {
                     }
 
                     {team.map((player, index) => (
-                        <li key={index} id={index}>
+                        <li className="card__list--item" key={index} id={index}>
                             <section>
                                 <p> {player.playerName}</p>
                             </section>
@@ -45,7 +45,7 @@ class TeamList extends Component {
                     ))
                     }
                 </ul>
-            </Fragment >
+            </div >
         )
     }
 }

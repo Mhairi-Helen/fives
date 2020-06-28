@@ -1,0 +1,36 @@
+.page{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-gap: 1rem;
+    max-width: calc(100% - 0.5rem); 
+    line-height: 1.5rem;
+    margin: 0 auto;
+}
+
+.page--two{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-gap: 1rem;
+    max-width: calc(100% - 0.5rem); 
+    line-height: 1.5rem;
+    margin: 0 auto;
+
+}
+
+.page__header{
+    text-align: left;
+    grid-column: span 2;
+}
+
+.page__header--two{
+    text-align: left;
+    grid-column: span 3;
+}
+
+.page__cards{
+    text-align: left;
+    grid-column: span 1;
+    grid-row: span 4;
+}

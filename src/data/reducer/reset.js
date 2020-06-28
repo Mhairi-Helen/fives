@@ -1,6 +1,10 @@
+import initialState from "../initial";
+
 //Reset all for a new game with new teams
+
 const reset = (state, action) => {
     return {
+        ...state,
         players: [],
         team1: [],
         team2: [],

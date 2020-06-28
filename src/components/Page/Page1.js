@@ -7,8 +7,8 @@ import Players from '../Players/index';
 const Page1 = () => {
 
     return (
-        < div >
-            <header>
+        < div className="page" >
+            <header className="page__header">
                 <h4>Step 1: Enter Player Names</h4>
             </header>
             <Player />

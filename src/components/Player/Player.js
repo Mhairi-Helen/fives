@@ -54,7 +54,7 @@ class Player extends Component {
         const { players, teamsGenerated } = this.props;
 
         return (
-            <div>
+            <div className="card">
                 <form onSubmit={this.handleSubmitPlayer} >
                     <div>
                         <label htmlFor="playerName">Name:</label>
@@ -68,60 +68,70 @@ class Player extends Component {
                         {error ? <small className="invalid-feedback">{error}</small> : ''}
 
                     </div>
+                    <p>Experience:</p>
 
-                    <fieldset>
-                        <p>Experience:</p>
+                    <fieldset className="radio__group">
 
-                        <label className="radio__container" htmlFor="beginner">
-                            <input
-                                className="radio__button"
-                                name="playerExperience"
-                                id="beginner"
-                                type="radio"
-                                value="1"
-                                onChange={this.handleExperience} />
 
-                            <span className="radio__button--img">
-                                <img
-                                    className="radio__img"
-                                    src={require("../../assets/icons/beginner.png")}
-                                    alt="1 Stars" />
-                            </span>
-                        </label>
+                        <div className="radio__button--container">
 
-                        <label className="radio__container" htmlFor="intermediate">
-                            <input
-                                className="radio__button"
-                                name="playerExperience"
-                                id="intermediate"
-                                type="radio"
-                                value="2"
-                                onChange={this.handleExperience} />
+                            <label htmlFor="beginner">
+                                <input
+                                    className="radio__button"
+                                    name="playerExperience"
+                                    id="beginner"
+                                    type="radio"
+                                    value="1"
+                                    onChange={this.handleExperience} />
 
-                            <span className="radio__button--img">
-                                <img
-                                    className="radio__img"
-                                    src={require("../../assets/icons/intermediate.png")}
-                                    alt="2 Stars" />
-                            </span>
-                        </label>
+                                <span className="radio__button--img">
+                                    <img
+                                        className="radio__img"
+                                        src={require("../../assets/icons/beginner.png")}
+                                        alt="1 Stars" />
+                                </span>
+                            </label>
+                        </div>
 
-                        <label className="radio__container" htmlFor="advanced">
-                            <input
-                                className="radio__button"
-                                name="playerExperience"
-                                id="advanced"
-                                type="radio"
-                                value="3"
-                                onChange={this.handleExperience} />
+                        <div className="radio__button--container">
 
-                            <span className="radio__button--img">
-                                <img
-                                    className="radio__img"
-                                    src={require("../../assets/icons/advanced.png")}
-                                    alt="3 Stars" />
-                            </span>
-                        </label>
+                            <label className="radio__container" htmlFor="intermediate">
+                                <input
+                                    className="radio__button"
+                                    name="playerExperience"
+                                    id="intermediate"
+                                    type="radio"
+                                    value="2"
+                                    onChange={this.handleExperience} />
+
+                                <span className="radio__button--img">
+                                    <img
+                                        className="radio__img"
+                                        src={require("../../assets/icons/intermediate.png")}
+                                        alt="2 Stars" />
+                                </span>
+                            </label>
+                        </div>
+
+                        <div className="radio__button--container">
+
+                            <label className="radio__container" htmlFor="advanced">
+                                <input
+                                    className="radio__button"
+                                    name="playerExperience"
+                                    id="advanced"
+                                    type="radio"
+                                    value="3"
+                                    onChange={this.handleExperience} />
+
+                                <span className="radio__button--img">
+                                    <img
+                                        className="radio__img"
+                                        src={require("../../assets/icons/advanced.png")}
+                                        alt="3 Stars" />
+                                </span>
+                            </label>
+                        </div>
                     </fieldset>
 
                     <section >

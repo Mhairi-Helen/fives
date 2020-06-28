@@ -19,12 +19,13 @@ button{
 }
 
 .button--primary--small { 
+    background-color: var(--turquoise);
     font-size: 0.75rem;
     padding: 0.5rem;
-    
 }
 
 .button--secondary--small {
+    background-color: var(--orange);
     font-size: 0.75rem;
     padding: 0.5rem;
 }
@@ -37,7 +38,6 @@ button{
     display: inline-block;
     max-width: 4rem; max-height: 4rem;
     min-width: 2rem; min-height: 2rem;
-
 }
 
 button:hover {

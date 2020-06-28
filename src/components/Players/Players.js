@@ -1,5 +1,5 @@
-import React, { Component, Fragment } from 'react';
-import Reset from "../Reset/ResetAll";
+import React, { Component } from 'react';
+import Reset from '../ResetAll/index';
 
 
 class Players extends Component {
@@ -11,26 +11,21 @@ class Players extends Component {
         const { players, handleDelete, handleGenerate, teamsGenerated } = this.props;
 
         return (
-            <Fragment>
-                <h4>Players</h4>
-                <ul>
+            <div className="card">
+                <h5>Players</h5>
+                <ul className="card__list">
                     {players.map((player, index) => (
-                        <li key={index} id={index}>
-                            <section>
-                                <p> {player.playerName}</p>
-                            </section>
+                        <li className="card__list--item" key={index} id={index}>
 
-                            <section>
-                                <p> {player.experience}</p>
-                            </section>
-
+                            <p> {player.playerName}</p>
+                            <p> {player.experience}</p>
 
                             {/* <picture className="card-img__container">
                             <img className="card-img" alt="" src={campsite.img}></img>
                         </picture> */}
 
                             < button
-                                className="button--secondary"
+                                className="button--secondary--small"
                                 onClick={() => handleDelete(index)}
                             >Delete</button >
                         </li>
@@ -41,11 +36,15 @@ class Players extends Component {
                     className={"button--primary" + (teamsGenerated || (players.length < 3) ? " disabled" : "")}
                     onClick={handleGenerate}
                     disabled={teamsGenerated || (players.length < 3)}>
-                    <a href="/step2">Generate Teams</a>
+                    Generate Teams
                 </button>
 
                 <Reset />
-            </Fragment >
+                <button
+                    className={"button--primary"}>
+                    <a href="/step2">On to Step 2</a>
+                </button>
+            </div >
         )
     }
 }

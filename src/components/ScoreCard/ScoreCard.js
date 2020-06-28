@@ -7,29 +7,33 @@ import Reset from "../ResetAll";
 const ScoreCard = () => {
 
     return (
-        <div className="card">
+        <div className="page">
+            <header className="page__header">
+                <h4>Step 3: Kick Off!</h4>
+            </header>
 
-            <section className="card__score">
-                <picture className="head--logo">
+            <div className="card" >
+                <picture className="card__img">
                     <img
                         className="icon"
                         src={require('../../assets/icons/strip1.png')} alt="Football strip icon" />
                 </picture>
                 <ScoreTeam1 />
-            </section>
-            <section className="card__score">
-                <picture className="head--logo">
+            </div>
+
+            <div className="card">
+                <picture className="card__img">
                     <img
                         className="icon"
                         src={require('../../assets/icons/strip2.png')} alt="Football strip icon" />
                 </picture>
                 <ScoreTeam2 />
-            </section>
+            </div>
 
-            <section className="card__button--reset">
+            <div>
                 <ResetScore />
                 <Reset />
-            </section>
+            </div>
         </div >
     )
 }

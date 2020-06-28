@@ -8,8 +8,8 @@ import TeamNames from '../TeamNames';
 const Page2 = () => {
 
     return (
-        < div >
-            <header>
+        < div className="page--two">
+            <header className="page__header--two">
                 <h4>Step 2: Choose Team Name</h4>
             </header>
             <TeamNames />

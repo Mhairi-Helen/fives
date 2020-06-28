@@ -61,7 +61,7 @@ class TeamNames extends Component {
         const { teamsGenerated } = this.props;
 
         return (
-            <Fragment>
+            <div class="card">
                 <div>
                     <form onSubmit={this.handleSubmitNames} >
 
@@ -105,7 +105,7 @@ class TeamNames extends Component {
                         <a href="/step3">On to Step 3</a>
                     </button>
                 </div>
-            </Fragment>
+            </div>
         )
     };
 };
