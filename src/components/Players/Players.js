@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import Reset from '../ResetAll/index';
 
 
@@ -42,7 +43,7 @@ class Players extends Component {
                 <Reset />
                 <button
                     className={"button--primary"}>
-                    <a href="/step2">On to Step 2</a>
+                    <Link to="/step2">On to Step 2</Link>
                 </button>
             </div >
         )

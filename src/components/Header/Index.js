@@ -1,5 +1,6 @@
 import React from "react";
 import Nav from "../Nav";
+import { Link } from "react-router-dom";
 
 const Head = () => {
 
@@ -13,7 +14,7 @@ const Head = () => {
                         src={require('../../assets/icons/football3.png')} alt="Football icon" />
 
                 </picture>
-                <h1><a href="/">Fives</a></h1>
+                <h1><Link to="/">Fives</Link></h1>
             </header>
             <Nav />
         </div>

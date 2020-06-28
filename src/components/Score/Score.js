@@ -5,14 +5,14 @@ const Score = ({ teamName, score, winner, handleClickPlus, handleClickMinus }) =
 
     return (
 
-        <div>
-            <h5>{teamName}</h5>
+        <div >
+            <h5 className="card__align" >{teamName}</h5>
             <div >
                 <p
                     className="score"
                 >{score}</p>
             </div>
-            <div>
+            <div className="card__align">
                 <button
                     className="button--primary"
                     disabled={winner}

@@ -1,4 +1,5 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 
 
 
@@ -58,7 +59,6 @@ class TeamNames extends Component {
     render() {
 
         const { team1Name, team2Name, error } = this.state;
-        const { teamsGenerated } = this.props;
 
         return (
             <div class="card">
@@ -102,7 +102,7 @@ class TeamNames extends Component {
                     </form>
                     <button
                         className={"button--primary"}>
-                        <a href="/step3">On to Step 3</a>
+                        <Link to="/step3">On to Step 3</Link>
                     </button>
                 </div>
             </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
 
@@ -14,18 +15,18 @@ const Nav = () => {
             </picture>
 
             <ul className="dropdown__content">
-                <li><a
+                <li><Link
                     className="dropdown__item"
-                    href="/step1">
-                    Step 1: Enter Player Names</a></li>
-                <li><a
+                    to="/step1">
+                    Step 1: Enter Player Names</Link></li>
+                <li><Link
                     className="dropdown__item"
-                    href="/step2">
-                    Step 2: Enter Player Names</a></li>
-                <li><a
+                    to="/step2">
+                    Step 2: Enter Player Names</Link></li>
+                <li><Link
                     className="dropdown__item"
-                    href="/step3">
-                    Step 3: Kick Off!</a></li>
+                    to="/step3">
+                    Step 3: Kick Off!</Link></li>
             </ul>
         </nav>
 

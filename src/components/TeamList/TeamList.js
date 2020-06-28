@@ -7,7 +7,7 @@ class TeamList extends Component {
 
     render() {
 
-        const { teamName, team, teamsGenerated, colours1 } = this.props;
+        const { teamName, team, colours1 } = this.props;
 
         return (
             <div div className="card">

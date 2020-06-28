@@ -1,7 +1,7 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 import {
-  BrowserRouter as Router,
+  Router,
   Route,
   Switch
 } from "react-router-dom";
@@ -12,18 +12,19 @@ import Page1 from './Page/Page1';
 import Page2 from './Page/Page2';
 import Page3 from './Page/Page3';
 import Header from './Header';
-// import Name from './Name'
+import history from '../history';
 
 
-function App() {
+const App = () => {
   return (
-    <Router>
-
-      <Route exact path="/">
-        <Home />
-      </Route>
+    <Router history={history}>
 
       <Switch>
+
+        <Route exact path="/">
+          <Home />
+        </Route>
+
         <Route exact path="/Step1">
           <header>
             <Header />
