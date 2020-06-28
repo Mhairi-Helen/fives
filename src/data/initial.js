@@ -1,10 +1,11 @@
 const initialState = {
-    scoreTeam1: 0,
-    scoreTeam2: 0,
-    winner: '',
+    players: [],
+    team1: [],
+    team2: [],
     team1Name: 'Team 1',
     team2Name: 'Team 2',
-    winningScore: 8,
+    team1Score: 0,
+    team2Score: 0,
 };
 
 export default initialState;

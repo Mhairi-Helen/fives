@@ -1,7 +1,9 @@
 import React, { Fragment } from 'react';
 import '../assets/style/main.scss';
-import Card from './Card';
+import Page1 from './Page/Page1';
+import Page3 from './Page/Page3';
 import Header from './Header';
+// import Name from './Name'
 
 
 function App() {
@@ -10,7 +12,8 @@ function App() {
       <header>
         <Header />
       </header>
-      <Card />
+      <Page1 />
+      <Page3 />
 
 
     </Fragment>

@@ -24,6 +24,20 @@ export const score2Minus = () => {
     }
 };
 
+export const addPlayer = (data) => {
+    return {
+        type: "ADD_PLAYER",
+        data: data,
+    }
+};
+
+//action to delete single player
+export const deletePlayer = (index,) => {
+    return {
+        type: "DELETE_PLAYER",
+        index: index,
+    }
+};
 
 //action to reset state
 export const reset = () => {

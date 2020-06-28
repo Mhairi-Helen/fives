@@ -4,14 +4,14 @@
 const score1Add = (state, action) => {
     return {
         ...state,
-        scoreTeam1: state.scoreTeam1 + 1
+        team1Score: state.team1Score + 1
     };
 };
 
 const score1Minus = (state, action) => {
     return {
         ...state,
-        scoreTeam1: state.scoreTeam1 - (state.scoreTeam1 > 0 ? 1 : 0)
+        team1Score: state.team1Score - (state.team1Score > 0 ? 1 : 0)
     };
 };
 
@@ -19,44 +19,60 @@ const score1Minus = (state, action) => {
 const score2Add = (state, action) => {
     return {
         ...state,
-        scoreTeam2: state.scoreTeam2 + 1
+        team2Score: state.team2Score + 1
     }
 };
 
 const score2Minus = (state, action) => {
     return {
         ...state,
-        scoreTeam2: state.scoreTeam2 - (state.scoreTeam2 > 0 ? 1 : 0)
+        team2Score: state.team2Score - (state.team2Score > 0 ? 1 : 0)
     };
 };
 
-//Returning the Winner
 
-//Check if there is a winner
-const winningScore = state => state.scoreTeam1 >= state.winningScore || state.scoreTeam2 >= state.winningScore;
 
-//Check which team is the winning team
-const winningTeam = state => state.scoreTeam1 > state.scoreTeam2 ? state.Team1Name : state.Team2Name;
-
-//return the winning team
-const winner = (state, action) => {
+//save the settings from the form
+const addPlayer = (state, { data }) => {
     return {
         ...state,
-        winner: winningScore(state) ? winningTeam(state) : ""
+        players: [
+            ...state.players,
+            {
+                playerName: data.playerName,
+                experience: data.experience,
+            }
+        ]
+    }
+};
+
+//Delete players by id by returning a new array minus the player with index specified inthe action
+const deletePlayer = (state, action) => {
+
+
+
+    let newPlayers = state.players.filter((player, index) => {
+        return index !== action.index;
+
+    })
+
+    return {
+        ...state,
+        players: newPlayers
     }
 };
 
 
-//Reset the scores and team names for a new game
+//Reset the scores and teams but NOT the player list for a new game
 const reset = (state, action) => {
     return {
-        ...state,
-        scoreTeam1: 0,
-        scoreTeam2: 0,
-        winner: '',
+        players: [],
+        players1: [],
+        players2: [],
         team1Name: 'Team 1',
         team2Name: 'Team 2',
-        winningScore: 8,
+        team1Score: 0,
+        team2Score: 0,
     }
 }
 
@@ -64,10 +80,12 @@ const reset = (state, action) => {
 
 const reducer = (state, action) => {
     switch (action.type) {
-        case "ADD_SCORE_1": return winner(score1Add(state));
-        case "MINUS_SCORE_1": return winner(score1Minus(state));
-        case "ADD_SCORE_2": return winner(score2Add(state));
-        case "MINUS_SCORE_2": return winner(score2Minus(state));
+        case "ADD_SCORE_1": return score1Add(state);
+        case "MINUS_SCORE_1": return score1Minus(state);
+        case "ADD_SCORE_2": return score2Add(state);
+        case "MINUS_SCORE_2": return score2Minus(state);
+        case "ADD_PLAYER": return addPlayer(state, action);
+        case "DELETE_PLAYER": return deletePlayer(state, action);
         case "RESET": return reset(state, action);
         default: return state;
     }
