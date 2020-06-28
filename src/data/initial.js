@@ -6,6 +6,7 @@ const initialState = {
     team2Name: 'Team 2',
     team1Score: 0,
     team2Score: 0,
+    teamsGenerated: false,
 };
 
 export default initialState;

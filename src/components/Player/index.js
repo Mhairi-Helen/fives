@@ -2,6 +2,13 @@ import { connect } from "react-redux";
 import Player from "./Player";
 import { addPlayer } from "../../data/action";
 
+const mapStateToProps = state => {
+
+    return {
+        players: state.players,
+        teamsGenerated: state.teamsGenerated,
+    };
+};
 
 const mapDispatchToProps = dispatch => {
     return {
@@ -9,4 +16,4 @@ const mapDispatchToProps = dispatch => {
     };
 };
 
-export default connect(null, mapDispatchToProps)(Player);
+export default connect(mapStateToProps, mapDispatchToProps)(Player);

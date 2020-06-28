@@ -6,6 +6,7 @@ const mapStateToProps = state => {
 
     return {
         players: state.players,
+        teamsGenerated: state.teamsGenerated,
     };
 };
 const mapDispatchToProps = (dispatch) => {

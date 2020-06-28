@@ -1,5 +1,6 @@
 import React from 'react';
-import Teams from '../Teams';
+import Team1 from '../TeamList/Team1';
+import Team2 from '../TeamList/Team2';
 
 
 
@@ -10,7 +11,7 @@ const Page2 = () => {
             <header>
                 <h4>Step 2: Choose Team Name</h4>
             </header>
-            <Teams />
+
         </div >
     )
 }

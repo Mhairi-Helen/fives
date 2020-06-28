@@ -11,10 +11,7 @@ class Player extends Component {
         this.state = {
             playerName: '',
             experience: '1',
-            error: {
-                playerNameErr: '',
-                experienceErr: '',
-            }
+            error: '',
         };
 
         this.handlePlayerName = this.handlePlayerName.bind(this);
@@ -37,19 +34,30 @@ class Player extends Component {
     handleSubmitPlayer = (e) => {
         e.preventDefault();
 
-        this.props.handleSubmitPlayer({ ...this.state })
+        const { playerName, experience, error } = this.state;
 
-        this.setState({
-            playerName: '',
-            experience: '1',
-        })
+        if (playerName.length < 1) {
+            this.setState({ error: "Please provide a name" })
+        } else {
+
+            this.props.handleSubmitPlayer({ ...this.state })
+            this.setState({
+                playerName: '',
+                experience: '1',
+                error: '',
+            })
+        };
+
+
+
     }
 
     // {playerNameErr ? <small>{playerNameErr}</small> : null}
 
     render() {
 
-        const { playerName } = this.state;
+        const { playerName, error } = this.state;
+        const { players, teamsGenerated } = this.props;
 
         return (
             <div>
@@ -63,6 +71,7 @@ class Player extends Component {
                             placeholder="Enter name"
                             value={playerName}
                             onChange={this.handlePlayerName} />
+                        {error ? <small className="invalid-feedback">{error}</small> : ''}
 
                     </div>
 
@@ -122,9 +131,14 @@ class Player extends Component {
                     </fieldset>
 
                     <section >
-                        <button className="button--secondary" type="submit" name="submit">
+                        <button
+                            className={"button--secondary" + (players.length > 9 || teamsGenerated ? " disabled" : "")}
+                            type="submit"
+                            name="submit"
+                            disabled={players.length > 9 || teamsGenerated}>
                             Enter
                         </button>
+
                     </section>
                 </form>
             </div>

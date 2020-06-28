@@ -8,6 +8,7 @@ const reset = (state, action) => {
         team2Name: 'Team 2',
         team1Score: 0,
         team2Score: 0,
+        teamsGenerated: false,
     }
 };
 

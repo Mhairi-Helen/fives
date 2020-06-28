@@ -8,7 +8,7 @@ class Players extends Component {
 
     render() {
 
-        const { players, handleDelete, handleGenerate } = this.props;
+        const { players, handleDelete, handleGenerate, teamsGenerated } = this.props;
 
         return (
             <Fragment>
@@ -37,8 +37,12 @@ class Players extends Component {
                     ))}
                 </ul>
 
-                <button className="button--primary" onClick={handleGenerate}
+                <button
+                    className={"button--primary" + (teamsGenerated || (players.length < 3) ? " disabled" : "")}
+                    onClick={handleGenerate}
+                    disabled={teamsGenerated || (players.length < 3)}
                 >Generate Teams</button>
+
                 <Reset />
             </Fragment >
         )
