@@ -32,14 +32,28 @@ export const addPlayer = (data) => {
 };
 
 //action to delete single player
-export const deletePlayer = (index,) => {
+export const deletePlayer = (index) => {
     return {
         type: "DELETE_PLAYER",
         index: index,
     }
 };
 
-//action to reset state
+//action to generate two balanced teams of up to 5 people in each team
+export const generateTeams = () => {
+    return {
+        type: "GENERATE_TEAMS",
+    }
+};
+
+//action to score only
+export const resetScore = () => {
+    return {
+        type: "RESET_SCORE",
+    }
+};
+
+//action to reset full game including teams and players
 export const reset = () => {
     return {
         type: "RESET",

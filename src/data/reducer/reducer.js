@@ -4,6 +4,7 @@ import initial from '../initial';
 import { score1Add, score1Minus, score2Add, score2Minus } from './score';
 import addPlayer from './addPlayer';
 import deletePlayer from './deletePlayer';
+import { generateTeams } from './generateTeams'
 import restScore from './resetScore';
 import reset from './reset';
 
@@ -16,6 +17,7 @@ const reducer = (state, action) => {
         case "MINUS_SCORE_2": return score2Minus(state);
         case "ADD_PLAYER": return addPlayer(state, action);
         case "DELETE_PLAYER": return deletePlayer(state, action);
+        case "GENERATE_TEAMS": return generateTeams(state);
         case "RESET_SCORE": return restScore(state, action);
         case "RESET": return reset(state, action);
         default: return state;

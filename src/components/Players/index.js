@@ -1,7 +1,6 @@
 import { connect } from 'react-redux';
 import Players from './Players';
-import { deletePlayer } from "../../data/actions";
-
+import { deletePlayer, generateTeams } from "../../data/action";
 
 const mapStateToProps = state => {
 
@@ -12,7 +11,8 @@ const mapStateToProps = state => {
 const mapDispatchToProps = (dispatch) => {
 
     return {
-        handleDelete: (index) => dispatch(deletePlayer(index))
+        handleDelete: (index) => dispatch(deletePlayer(index)),
+        handleGenerate: () => dispatch(generateTeams())
     }
 };
 export default connect(mapStateToProps, mapDispatchToProps)(Players);

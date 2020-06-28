@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import Reset from "../Reset/ResetAll";
 
 
 class Players extends Component {
@@ -7,7 +8,7 @@ class Players extends Component {
 
     render() {
 
-        const { players, handleDelete } = this.props;
+        const { players, handleDelete, handleGenerate } = this.props;
 
         return (
             <Fragment>
@@ -35,6 +36,10 @@ class Players extends Component {
                         </li>
                     ))}
                 </ul>
+
+                <button className="button--primary" onClick={handleGenerate}
+                >Generate Teams</button>
+                <Reset />
             </Fragment >
         )
     }

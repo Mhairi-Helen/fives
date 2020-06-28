@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import Score from "./Score";
-import { score1Add, score1Minus } from "../../data/actions";
+import { score1Add, score1Minus } from "../../data/action";
 
 const mapStateToProps = (state) => {
 

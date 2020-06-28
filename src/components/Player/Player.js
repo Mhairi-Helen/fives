@@ -10,7 +10,7 @@ class Player extends Component {
         //create local state for player name and experience
         this.state = {
             playerName: '',
-            experience: '',
+            experience: '1',
             error: {
                 playerNameErr: '',
                 experienceErr: '',
@@ -41,7 +41,7 @@ class Player extends Component {
 
         this.setState({
             playerName: '',
-            experience: '',
+            experience: '1',
         })
     }
 
@@ -75,7 +75,7 @@ class Player extends Component {
                                 name="playerExperience"
                                 id="beginner"
                                 type="radio"
-                                value="beginner"
+                                value="1"
                                 onChange={this.handleExperience} />
 
                             <span className="radio__button--img">
@@ -92,7 +92,7 @@ class Player extends Component {
                                 name="playerExperience"
                                 id="intermediate"
                                 type="radio"
-                                value="intermediate"
+                                value="2"
                                 onChange={this.handleExperience} />
 
                             <span className="radio__button--img">
@@ -109,7 +109,7 @@ class Player extends Component {
                                 name="playerExperience"
                                 id="advanced"
                                 type="radio"
-                                value="advanced"
+                                value="3"
                                 onChange={this.handleExperience} />
 
                             <span className="radio__button--img">
