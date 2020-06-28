@@ -11,3 +11,5 @@ const addPlayer = (state, { data }) => {
         ]
     }
 };
+
+export default addPlayer;

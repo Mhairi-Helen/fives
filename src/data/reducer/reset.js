@@ -9,4 +9,6 @@ const reset = (state, action) => {
         team1Score: 0,
         team2Score: 0,
     }
-}
+};
+
+export default reset;
