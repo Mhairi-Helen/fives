@@ -41,19 +41,17 @@ class TeamNames extends Component {
 
             this.setState({ error: "Please provide a team name" });
 
-        };
-
-        if (team2Name.length < 1) {
+        } else if (team2Name.length < 1) {
 
             this.setState({ error: "Please provide a team name" });
-
+        } else {
+            this.props.handleSubmitTeamNames({ ...this.state })
+            this.setState({
+                team1Name: '',
+                team2Name: '',
+                error: '',
+            })
         };
-
-        this.props.handleSubmitTeamNames({ ...this.state })
-        this.setState({
-            error: '',
-        })
-
     };
 
 
@@ -93,14 +91,19 @@ class TeamNames extends Component {
 
                         <section >
                             <button
-                                className={"button--secondary"}
+                                className={"button--secondary" + (team1Name.length < 3 && team2Name.length < 3 ? " disabled" : "")}
                                 type="submit"
-                                name="submit">
-                                <a href="/step3">Enter</a>
+                                name="submit"
+                                disabled={team1Name.length < 3 && team2Name.length < 3}>
+                                Enter
                             </button>
 
                         </section>
                     </form>
+                    <button
+                        className={"button--primary"}>
+                        <a href="/step3">On to Step 3</a>
+                    </button>
                 </div>
             </Fragment>
         )

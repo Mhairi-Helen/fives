@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 
 import '../assets/style/main.scss';
+import Home from './Page/Home';
 import Page1 from './Page/Page1';
 import Page2 from './Page/Page2';
 import Page3 from './Page/Page3';
@@ -17,6 +18,10 @@ import Header from './Header';
 function App() {
   return (
     <Router>
+
+      <Route exact path="/">
+        <Home />
+      </Route>
 
       <Switch>
         <Route exact path="/Step1">

@@ -10,9 +10,19 @@ const ScoreCard = () => {
         <div className="card">
 
             <section className="card__score">
+                <picture className="head--logo">
+                    <img
+                        className="icon"
+                        src={require('../../assets/icons/strip1.png')} alt="Football strip icon" />
+                </picture>
                 <ScoreTeam1 />
             </section>
             <section className="card__score">
+                <picture className="head--logo">
+                    <img
+                        className="icon"
+                        src={require('../../assets/icons/strip2.png')} alt="Football strip icon" />
+                </picture>
                 <ScoreTeam2 />
             </section>
 
