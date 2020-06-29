@@ -6,7 +6,7 @@ Basic five aside app that allows users to enter in their names and level of expe
 
 Users can either reset scores to play a new game or reset teams.
 
-The app is hosted [here] (https://mhairi-helen.github.io/fives).
+The app is hosted [here](https://mhairi-helen.github.io/fives).
 
 
 ## Installation
