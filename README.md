@@ -1,6 +1,6 @@
-#Fives
+# Fives
 
-##Summary
+## Summary
 
 Basic five aside app that allows users to enter in their names and level of experience from between 3 and 10 players. The app will generate balanced teams based on skill level and keep track of scores during the game. 
 
@@ -9,7 +9,7 @@ Users can either reset scores to play a new game or reset teams.
 The app is hosted [here] (https://mhairi-helen.github.io/fives).
 
 
-##Installation
+## Installation
 
 Run 'npm -v' to check that you have npm installed on your machine.
 
