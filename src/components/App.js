@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 
 import '../assets/style/main.scss';
-import Home from './Page/Home';
+import Splash from './Page/Splash/index';
 import Page1 from './Page/Page1';
 import Page2 from './Page/Page2';
 import Page3 from './Page/Page3';
@@ -22,7 +22,7 @@ const App = () => {
       <Switch>
 
         <Route exact path="/">
-          <Home />
+          <Splash />
         </Route>
 
         <Route exact path="/Step1">

@@ -10,10 +10,6 @@ const orderByLevel = (array) => {
 //adds alternating players into teams once sorted
 const splitPlayers = (array) => {
 
-    if (array.length < 4) {
-        return "Please enter more than 3 players";
-    };
-
     let team1 = [];
     let team2 = [];
     let teams = [team1, team2];
@@ -34,16 +30,12 @@ export const generateTeams = (state) => {
     const team1 = teams[0];
     const team2 = teams[1];
 
-    console.log(team1)
-    console.log(team2)
-
     return {
         ...state,
+        players: [],
         team1: team1,
         team2: team2,
         teamsGenerated: true,
-        players: [],
     }
-
-
 };
+
