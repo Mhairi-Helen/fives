@@ -11,8 +11,10 @@ const Splash = ({ handleClick }) => {
                 <h2 className="home__header--sub">
                     <Link
                         to="/step1"
-                        onclick={handleClick}
-                    >[Enter Here]</Link></h2>
+                        onClick={handleClick}>
+                        [Enter Here]
+                    </Link>
+                </h2>
             </header>
 
 
