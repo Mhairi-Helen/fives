@@ -43,3 +43,51 @@ li:hover {
   display: block;
   width: 25%;
 }
+
+@media all and (max-width: 767px){
+
+  li:active {
+    background: var(--light-turquoise);
+    color: var(--white);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .dropdown{
+      margin: 1rem;
+  }
+
+  .dropdown__btn{
+    border-radius: 0.5rem;
+    max-width: 3rem;
+  max-height: 3rem;
+  }
+
+  .dropdown__content{
+      background: var(--white);
+      font-size: 1rem;
+      visibility: hidden;
+      min-width: 5rem;
+      position: absolute;
+      margin: 0 0.5rem;
+      transition: all 0.5s ease;
+      display: none;
+      box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
+      z-index: 1; 
+      border-radius: 0.25rem;  
+      right: 0em;
+  }
+
+  .dropdown__item{
+    line-height: 2rem;
+    padding: 1rem; 
+  }
+
+  .dropdown:hover .dropdown__content,
+  .dropdown:focus-within .dropdown__content {
+    visibility: visible;
+    display: block;
+    width: 75%;
+  }
+
+}

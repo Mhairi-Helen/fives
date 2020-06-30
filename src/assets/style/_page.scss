@@ -59,6 +59,13 @@
     justify-self: left;
 }
 
+.grid__group--right{
+    grid-column: 3;
+    display: grid;
+    justify-self: right;
+    margin-right: 1rem;
+}
+
 
 @media all and (max-width: 767px){
 
@@ -111,6 +118,10 @@
     .page__footer--two{
         text-align: left;
         grid-column: span 2;
+    }
+
+    .grid__group--right{
+        grid-column: 2;
     }
     
     .page__cards{

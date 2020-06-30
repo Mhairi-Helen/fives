@@ -32,3 +32,17 @@
       transform: rotate(360deg);
     }
   }
+
+  @media all and (max-width: 767px){
+
+    .head--brand{
+      display: flex;
+      align-items: center;
+      margin: 0.5rem;
+  }
+
+    .head--logo{
+      max-width: 4rem;
+      max-height: 4rem;
+    }
+  }
