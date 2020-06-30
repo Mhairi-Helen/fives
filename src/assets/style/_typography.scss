@@ -61,6 +61,13 @@ p{
     color: var(--dark-grey);
 }
 
+label{
+    font-family: futura-pt , sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--dark-grey);
+}
+
 time{
     font-family: futura-pt , sans-serif;
     font-weight: 400;
@@ -87,4 +94,104 @@ li{
 a {
     text-decoration: none;
     color: inherit;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) { 
+
+    /*Headings on a tablet*/
+
+    h1 {
+        font-family: chantal  , sans-serif;
+        font-size: 5rem;
+        font-weight: 700;
+        color: var(--white);
+    }
+    
+    h2{
+        font-family: futura-pt , sans-serif;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--white);
+        padding: 4rem 5rem;
+        text-align: center;
+    }
+    
+    h3{
+        font-family: futura-pt , sans-serif;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--dark-grey);
+        text-align: left;
+        margin: 2em;
+    }
+    
+    h4{
+        font-family: futura-pt , sans-serif;
+        font-size: 2.2rem;
+        font-weight: 400;
+        color: var(--dark-grey);
+        text-align: left;
+        margin: 1em;
+    }   
+
+}
+
+
+@media all and (max-width: 767px){
+
+    /* Headings on a mobile phone*/
+
+h1 {
+    font-family: chantal  , sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+h2{
+    font-family: futura-pt , sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--white);
+    padding: 4rem 5rem;
+    text-align: center;
+}
+
+h3{
+    font-family: futura-pt , sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--dark-grey);
+    text-align: left;
+    margin: 2em;
+}
+
+h4{
+    font-family: futura-pt , sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 400;
+    color: var(--dark-grey);
+    text-align: left;
+    margin: 1em;
+}
+
+h5{
+    font-family: futura-pt , sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--orange);
+    text-align: left;
+    margin: 1em;
+}
+
+h6{
+    font-family: futura-pt , sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--turquoise);
+    text-align: left;
+    margin: 1em;
+}
+    
 }

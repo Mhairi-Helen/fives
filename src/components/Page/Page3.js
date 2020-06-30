@@ -7,14 +7,16 @@ import Reset from "../ResetAll";
 const Page3 = () => {
 
     return (
-        <div className="page">
-            <header className="page__header">
+        <div className="page--three">
+            <header className="page__header--two">
                 <h4>Step 3: Kick Off!</h4>
             </header>
             <ScoreCard />
-            <div className="page__footer">
-                <ResetScore />
-                <Reset />
+            <div className="page__footer--two grid__group--centre">
+                <div>
+                    <ResetScore />
+                    <Reset />
+                </div>
             </div>
         </div>
     )

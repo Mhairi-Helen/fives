@@ -2,6 +2,7 @@ label{
   display: block;
   color: var(--dark-grey);
   padding: 0;
+  font-size: 1rem;
 }
 
 input{
@@ -30,13 +31,6 @@ input{
   width: 0; 
 }
 
-/* container for image */
-
-.radio__button--container{
-  max-width: 6em;
-}
-
-
 /* use chosen icons as radio buttons */
 .radio__img{
     object-fit: contain; 
@@ -51,4 +45,8 @@ input{
   /* checked styling*/
   .radio__button:checked ~ .radio__button--img {
     opacity:0.6;
+  }
+
+  @media all and (max-width: 767px){
+
   }

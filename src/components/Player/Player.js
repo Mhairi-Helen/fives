@@ -73,7 +73,7 @@ class Player extends Component {
                     <fieldset className="radio__group">
 
 
-                        <div className="radio__button--container">
+                        <div>
 
                             <label htmlFor="beginner">
                                 <input

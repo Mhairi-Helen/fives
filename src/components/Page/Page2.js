@@ -1,9 +1,8 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import Team1 from '../TeamList/Team1';
 import Team2 from '../TeamList/Team2';
 import TeamNames from '../TeamNames';
-
-
 
 const Page2 = () => {
 
@@ -15,8 +14,10 @@ const Page2 = () => {
             <TeamNames />
             <Team1 />
             <Team2 />
-
-
+            <button
+                className={"button--primary"}>
+                <Link to="/step3">On to Step 3</Link>
+            </button>
         </div >
     )
 }

@@ -61,7 +61,7 @@ class TeamNames extends Component {
         const { team1Name, team2Name, error } = this.state;
 
         return (
-            <div class="card">
+            <div class="card--two">
                 <div>
                     <form onSubmit={this.handleSubmitNames} >
 
@@ -100,10 +100,6 @@ class TeamNames extends Component {
 
                         </section>
                     </form>
-                    <button
-                        className={"button--primary"}>
-                        <Link to="/step3">On to Step 3</Link>
-                    </button>
                 </div>
             </div>
         )

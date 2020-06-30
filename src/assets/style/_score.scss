@@ -7,3 +7,11 @@
     border: solid 2px var(--grey);
     border-radius: 2rem;
 }
+
+@media all and (max-width: 767px){
+    .score {
+    font-size: 4rem;
+    margin: 2rem;
+    padding: 1em 0;
+    }
+}

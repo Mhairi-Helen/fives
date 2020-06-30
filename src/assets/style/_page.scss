@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, auto);
-    grid-gap: 1rem;
     max-width: calc(100% - 0.5rem); 
     line-height: 1.5rem;
     margin: 0 auto;
@@ -13,6 +12,16 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(6, auto);
     grid-gap: 1rem;
+    max-width: calc(100% - 0.5rem); 
+    line-height: 1.5rem;
+    margin: 0 auto;
+
+}
+
+.page--three{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, auto);
     max-width: calc(100% - 0.5rem); 
     line-height: 1.5rem;
     margin: 0 auto;
@@ -38,4 +47,75 @@
     text-align: left;
     grid-column: span 1;
     grid-row: span 4;
+}
+
+.grid__group--centre{
+    display: grid;
+    justify-self: center;
+}
+
+.grid__group--left{
+    display: grid;
+    justify-self: left;
+}
+
+
+@media all and (max-width: 767px){
+
+    .page{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, auto);
+        // grid-gap: 1rem;
+        max-width: calc(100% - 0.5rem); 
+        line-height: 1.5rem;
+        margin: 0 auto;
+    }
+    
+    .page--two{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, auto);
+        grid-gap: 1rem;
+        max-width: calc(100% - 0.5rem); 
+        line-height: 1.5rem;
+        margin: 0 auto;   
+    }
+
+    .page--three{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, auto);
+        grid-gap: 1rem;
+        max-width: calc(100% - 0.5rem); 
+        line-height: 1.5rem;
+        margin: 0 auto;   
+    
+    }
+    
+    .page__header{
+        text-align: left;
+        grid-column: span 1;
+    }
+    
+    .page__footer{
+        text-align: center;
+        grid-column: span 1;
+    }
+    
+    .page__header--two{
+        text-align: left;
+        grid-column: span 2;
+    }
+
+    .page__footer--two{
+        text-align: left;
+        grid-column: span 2;
+    }
+    
+    .page__cards{
+        text-align: left;
+        grid-column: span 1;
+        grid-row: span 4;
+    }
 }

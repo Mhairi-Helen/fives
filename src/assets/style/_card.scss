@@ -3,6 +3,11 @@
     padding: 1rem;    
 } 
 
+.card--two{
+    grid-row: span 3;
+    padding: 1rem;    
+} 
+
 .card__align{
     text-align: center;
     margin: 0 auto;
@@ -32,4 +37,52 @@
     align-content: center;
     justify-content: space-between;
     border-bottom: solid 1px var(--grey); 
+}
+
+@media all and (max-width: 767px){
+
+    .card{
+        grid-row: span 3;
+        padding: 1rem;    
+    } 
+
+    .card--two{
+        grid-column: span 2;
+        padding: 1rem;    
+    } 
+    
+    .card__align{
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .card__button{
+        width: 11rem;
+        display: inline-block;
+        align-self: center;
+        margin: 1rem;
+    }
+    
+    .card__img{
+        display: block;
+        max-width: 15em;
+        margin: 0 auto;
+    }
+    
+    .card__list{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    .card__list--item{
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        border-bottom: solid 1px var(--grey); 
+    }
+
+    
+    
+
 }

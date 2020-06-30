@@ -37,14 +37,14 @@ class Players extends Component {
                     className={"button--primary" + (teamsGenerated || (players.length < 3) ? " disabled" : "")}
                     onClick={handleGenerate}
                     disabled={teamsGenerated || (players.length < 3)}>
-                    Generate Teams
+                    <Link
+                        to={players.length > 2 ? "/step2" : "/step1"}>
+                        Generate Teams
+                    </Link>
                 </button>
 
                 <Reset />
-                <button
-                    className={"button--primary"}>
-                    <Link to="/step2">On to Step 2</Link>
-                </button>
+
             </div >
         )
     }

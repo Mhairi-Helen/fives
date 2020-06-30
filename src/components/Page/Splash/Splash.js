@@ -17,16 +17,10 @@ const Splash = ({ handleClick }) => {
                 </h2>
             </header>
 
-
             <picture className="home__brand">
                 <img
                     className="home__logo"
                     src={require('../../../assets/icons/football2.png')} alt="Bouncing Football icon" />
-                <img
-                    className="home__logo"
-                    src={require('../../../assets/icons/football3.png')} alt="Bouncing Football icon" />
-
-
             </picture>
         </div >
     )

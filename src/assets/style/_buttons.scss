@@ -6,11 +6,10 @@ button{
     padding: 0.5rem 1rem ;
     margin: 0.5rem;
     border-radius: 10px ;
-    padding: 1rem 2rem; 
-
+    padding: 1rem 2rem;
 }
+
 .button--primary {
-    
     background-color: var(--turquoise);   
 }
 
@@ -48,3 +47,30 @@ button:active {
     opacity: 1;
 }
 
+
+
+@media all and (max-width: 767px){
+    button{
+        text-decoration: none;
+        color: var(--white);
+        border: none;
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem ;
+        margin: 0.5rem;
+        border-radius: 10px ;
+        padding: 0.8rem 1rem;        
+    }
+    
+    .button--primary--small { 
+        background-color: var(--turquoise);
+        font-size: 0.75rem;
+        padding: 0.5rem;
+    }
+    
+    .button--secondary--small {
+        background-color: var(--orange);
+        font-size: 0.75rem;
+        padding: 0.5rem;
+    }
+
+}
