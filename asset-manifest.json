@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/fives/static/css/main.8a1d381b.chunk.css",
+    "main.css": "/fives/static/css/main.018fa483.chunk.css",
     "main.js": "/fives/static/js/main.8b3acc6f.chunk.js",
     "main.js.map": "/fives/static/js/main.8b3acc6f.chunk.js.map",
     "runtime-main.js": "/fives/static/js/runtime-main.afcac55f.js",
@@ -8,9 +8,9 @@
     "static/js/2.0907fc63.chunk.js": "/fives/static/js/2.0907fc63.chunk.js",
     "static/js/2.0907fc63.chunk.js.map": "/fives/static/js/2.0907fc63.chunk.js.map",
     "index.html": "/fives/index.html",
-    "precache-manifest.1dd72a9c026ff6de6e53d3c8ed1ec4c8.js": "/fives/precache-manifest.1dd72a9c026ff6de6e53d3c8ed1ec4c8.js",
+    "precache-manifest.d3ce684cf3dfffaa6921cf5369dc958e.js": "/fives/precache-manifest.d3ce684cf3dfffaa6921cf5369dc958e.js",
     "service-worker.js": "/fives/service-worker.js",
-    "static/css/main.8a1d381b.chunk.css.map": "/fives/static/css/main.8a1d381b.chunk.css.map",
+    "static/css/main.018fa483.chunk.css.map": "/fives/static/css/main.018fa483.chunk.css.map",
     "static/js/2.0907fc63.chunk.js.LICENSE.txt": "/fives/static/js/2.0907fc63.chunk.js.LICENSE.txt",
     "static/media/football2.png": "/fives/static/media/football2.9bc50174.png",
     "static/media/football3.png": "/fives/static/media/football3.481ccf56.png",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.afcac55f.js",
     "static/js/2.0907fc63.chunk.js",
-    "static/css/main.8a1d381b.chunk.css",
+    "static/css/main.018fa483.chunk.css",
     "static/js/main.8b3acc6f.chunk.js"
   ]
 }
